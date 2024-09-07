@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Liste-Woman</title>
+    <link rel="stylesheet" href="project-lists-woman.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+
+</head>
+<body>
+    <header>
+        <img src="imags/logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project-lists-woman.html">Shop</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+        <div class="nav-icons">
+            <a href="project-lists-woman.html">
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div id="filters">
+        <select id="categoryFilter" onchange="filterProducts()">
+            <option value="">old </option>
+            <option value="general">5-10 </option>
+            <option value="programming">10-20</option>
+            <option value="puns">20-40</option>
+        </select>
+    
+        <select id="categoryFilter" onchange="filterProducts()">
+            <option value="">All </option>
+            <option value="general">Woman</option>
+            <option value="programming">Man</option>
+            <option value="puns">Boys</option>
+        </select>
+
+        <select id="categoryFilter" onchange="filterProducts()">
+            <option value="">size </option>
+            <option value="general">XS</option>
+            <option value="general">S</option>
+            <option value="programming">M</option>
+            <option value="puns">L</option>
+            <option value="puns">XL</option>
+            <option value="puns">XXL</option>
+        </select>
+    </div>
+   
+    <div id="products"></div>
+
+
+    
+    <div class="basket" id="basket">
+        <h2>Basket</h2>
+        <div id="basketItems"></div>
+        <button id="checkoutButton" onclick="proceedToCheckout()">Proceed to Payment</button>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Onu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <hr>
+
+    
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#about">ABOUT US</a> |
+                <a href="#contact">CONTACT US</a> |
+                <a href="#delivery">DELIVERY & RETURNS</a> |
+                <a href="#faqs">KLARNA FAQS</a> |
+                <a href="#stores">OUR STORES</a> |
+                <a href="#privacy">PRIVACY POLICY</a> |
+                <a href="#sitemap">SITEMAP</a> |
+                <a href="#terms">TERMS & CONDITIONS</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Onu. All Rights Reserved.</p>
+            <p>Onu Clothing Registered office UNIT S13 HASTINGWOOD INDUSTRIAL PARK, BIRMINGHAM, norway, B24 9QR, Registered in norway</p>
+            <p>Company Registration Number 000000 VAT no. 000000</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

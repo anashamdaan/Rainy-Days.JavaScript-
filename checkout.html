@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <header>
+            <img src="imags/logo.png" alt="Logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project-lists-woman.html">Shop</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+       
+    </header>
+    <main>
+        <h1>Checkout</h1>
+        <h2>Payment Details</h2>
+        <form action="confirmation.html" method="GET">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="number" id="card-number" name="card-number" placeholder="1234 5678 9123 4567" required>
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="date" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" placeholder="123" required>
+
+            <input type="submit" value="Proceed to Payment">
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#about">ABOUT US</a> |
+                <a href="#contact">CONTACT US</a> |
+                <a href="#delivery">DELIVERY & RETURNS</a> |
+                <a href="#faqs">KLARNA FAQS</a> |
+                <a href="#stores">OUR STORES</a> |
+                <a href="#privacy">PRIVACY POLICY</a> |
+                <a href="#sitemap">SITEMAP</a> |
+                <a href="#terms">TERMS & CONDITIONS</a>
+            </nav>
+       
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Onu. All Rights Reserved.</p>
+            <p>Onu Clothing Registered office UNIT S13 HASTINGWOOD INDUSTRIAL PARK, BIRMINGHAM, norway, B24 9QR, Registered in norway</p>
+            <p>Company Registration Number 000000 VAT no. 000000</p>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+</html>
